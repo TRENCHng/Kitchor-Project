@@ -1,358 +1,375 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-               /* CSS RESET */
+/* CSS RESET */
 @import url(reset.css);
-*{  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-                 /* ROOT */
-:root{
-    --nigga:black;
-    --master:white;
-    --asian:#DAA14C;
-    --nigga2:rgb(35,38,45);
-    --nigga3: rgb(57,60,66);
-    --fontfamily:poppins,sans-serif;
+/* ROOT */
+:root {
+  --nigga: black;
+  --master: white;
+  --asian: #daa14c;
+  --nigga2: rgb(35, 38, 45);
+  --nigga3: rgb(57, 60, 66);
+  --fontfamily: poppins, sans-serif;
 }
-               /* BODY */
-               
-body{
-   font-family: poppins,sans-serif;
-   /* font-family: var(--fontfamily); */
-   font-weight: 600;
-   color: var(--master);
+/* BODY */
+
+body {
+  font-family: poppins, sans-serif;
+  /* font-family: var(--fontfamily); */
+  font-weight: 600;
+  color: var(--master);
 }
-.background{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.568),
-   rgba(0, 0, 0, 0.589)),url(/img/stolen.png) ;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   min-height: 100vh;
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.589)),
+    url(./img/stolen.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
 }
 /* html{
     color-scheme: dark light;
 } */
 
-a{
-    text-decoration: none;
-    color: var(--master);
+a {
+  text-decoration: none;
+  color: var(--master);
 }
-#home{
-    color: var(--asian);
-}
-
-svg{
-    color: var(--master);    
-}
-             /* NAVBAR */
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    font-family: var(--fontfamily);
-    padding: 1.5rem;
-}
-.navbar span{
-    size: 4rem;
-}
-.space{
-    display: flex;
-    align-items: baseline   ;
-    gap: 3.5rem;
-}
-.links{
-    display: flex;
-    gap: 2rem;
-}
-.links a{
-    transition: text-decoration 300ms ease-in;
+#home {
+  color: var(--asian);
 }
 
-.links a:hover{
-    color: var(--asian);
-    text-decoration: underline;
-    text-decoration-color: var(--asian);
-    
+svg {
+  color: var(--master);
 }
-.icons{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+/* NAVBAR */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--fontfamily);
+  padding: 1.5rem;
 }
-.icons svg{
-    width: 1.5rem;
-    height: 1.5rem;
+.navbar span {
+  size: 4rem;
 }
-                  /* BODY */
-.hero{
-    margin-top: 13rem;
-    text-align: center;
-    font-family: var(--fontfamily);
+.space {
+  display: flex;
+  align-items: baseline;
+  gap: 3.5rem;
 }
-.hero h2{
-    font-size: 4rem;
+.links {
+  display: flex;
+  gap: 2rem;
 }
-.content button{
-    padding: 11px 30px;
-    border-radius: 3rem;
-    border: none;
-    margin: 40px;
-    font-size: small;
-    font-weight: 700;
+.links a {
+  transition: text-decoration 300ms ease-in;
 }
-.second{
-  background-color:var(--nigga2);
+
+.links a:hover {
+  color: var(--asian);
+  text-decoration: underline;
+  text-decoration-color: var(--asian);
 }
-.one{
-    display: flex;
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.icons svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+/* BODY */
+.hero {
+  margin-top: 13rem;
+  text-align: center;
+  font-family: var(--fontfamily);
+}
+.hero h2 {
+  font-size: 4rem;
+}
+.content button {
+  padding: 11px 30px;
+  border-radius: 3rem;
+  border: none;
+  margin: 40px;
+  font-size: small;
+  font-weight: 700;
+}
+.second {
+  background-color: var(--nigga2);
+}
+.one {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding-top: 110px;
 }
-.txt{
-    display: flex;
-    align-items: center;
+.txt {
+  display: flex;
+  align-items: center;
 }
-.txt p{
-    font-size: 100px;
-    color: var(--asian);
-}
-
-.color{
-    border: 10px solid rgb(57,60,66);
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 10px 30px;
-}
-.txti p{
-    font-size: 15px;
-    color: var(--asian);
-}
-.txti h2{
-    font-size: 45px;
-    font-weight: 600;
-}
-.txtii{
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-.txtii p{
-    font-weight: 400;
-    color: rgb(131, 133, 138) ;
-}
-.txtii button{
-    background-color: var(--nigga3);
-    color: var(--master);
-    font-size: 13px;
-    padding: 11px 50px;
-    border-radius: 2rem;
-    border: none;
-}
-.images{
-    display: flex;
-    gap: 2rem;
-    padding: 10rem 25px 25px
-}
-.txt1{
-    font-size: 25px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-}
-.txt2{
-    font-size: 25px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-}
-.txt3{
-    font-size: 25px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-}
-.txt4{
-    font-size: 25px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-}
-.choose p{
-    font-size: 15px;
-    color: var(--asian);
-}
-.choose h2{
-    font-size: 2.5rem;
-    font-weight: 600;
-}
-.three{
-    padding: 9rem 25px ;
-}
-.services{
-    display: flex;      
-}
-.full, .value,.partners, .integ{
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.5rem;
-    gap: 1rem;
-    padding: 0px 29px 29px ;
-}
-.img img{
-    width: 80rem;
-    height: 35rem;
-    position: relative;
-    top: 11.5rem;
-    left: 2rem;
-    color: linear-gradient(rgba(0, 0, 0, 0.568),
-    rgba(0, 0, 0, 0.589));
-    filter: brightness(40%);
-}
-.text{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    position: absolute;
-    top: 175rem;
-    left: 5rem;
-}
-.text span{
-    font-size: 15px;
-    color: var(--asian);
-}
-.text h2{
-    font-size: 2.5rem;
-    font-weight: 600;
-}
-.text p{
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-}
-.text button{
-    background-color: var(--master);
-    color: var(--nigga);
-    font-size: 13px;
-    padding: 13px 70px;
-    border-radius: 2rem;
-    border: none;
-}
-.footer{
-    color: var(--nigga);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.253),
-    rgba(0, 0, 0, 0.589)),url(/img/marblekitchen.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 70vh;
-}
-.foot{
-    display: flex;
-    gap: 6rem;
-    /* padding-top: 5rem; */
-    padding: 5rem 25px 0px;
-}
-.kitchor{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.kitchor h1{
-    font-weight: 600;
-    color: var(--asian);
-    font-size: 2rem
-    
-}
-.kitchor p{
-    font-weight: 400;
-    color: var(--master);
-}
-.number{
-    display: flex;
-    flex-direction: column;
-}
-.no2{
-    display: flex;
-    gap: 1rem;
-}
-.no2 p{
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-.no2 span{
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--asian);
-}
-.icn{
-    display: flex;
-    gap: 1rem;
-}
-.icn svg{
-    color: var(--nigga3);
-}
-.info{
-    display: flex;
-    gap: 4rem;
-}
-.info li{
-    list-style: none;
-    color: var(--master);
-    font-weight: 400;
-}
-.info h2{
-    color: var(--asian);
-    font-size: 20px;
-    font-weight: 500;
-}.subs p{
-    color: var(--nigga3);
-    font-weight: 470;
-}
-.email input{
-    color: var(--nigga3);
-}
-.email button{
-    background-color: var(--asian);
-    color: var(--master);
-    font-size: 13px;
-    padding: 13px 70px;
-    border-radius: 2rem;
-    border: none;
-}
-.sec5{
-    text-align: center;
-    padding-bottom: 10rem;
-}
-.sec5 p{
-    font-size: 15px;
-    color: var(--asian);
-}
-.sec5 h1{
-    font-size: 45px;
-    font-weight: 600;   
-}
-.sec5 button{
-    background-color: var(--asian);
-    color: var(--master);
-    font-size: 15px;
-    padding: 13px 70px;
-    border-radius: 2rem;
-    border: none;
-    
-}
-.sec5 svg{
-    margin-left: 3.5rem;
-}
-input{
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 0.5rem;
-    margin: 1rem 0;
-}
-.hr{
-    background-color: var(--nigga3);
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-top: 2.1rem;
-}
-.hr hr{
-    margin-top: 5rem;
-    color: var(--nigga3);
+.txt p {
+  font-size: 100px;
+  color: var(--asian);
 }
 
+.color {
+  border: 10px solid rgb(57, 60, 66);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 10px 30px;
+}
+.txti p {
+  font-size: 15px;
+  color: var(--asian);
+}
+.txti h2 {
+  font-size: 45px;
+  font-weight: 600;
+}
+.txtii {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.txtii p {
+  font-weight: 400;
+  color: rgb(131, 133, 138);
+}
+.txtii button {
+  background-color: var(--nigga3);
+  color: var(--master);
+  font-size: 13px;
+  padding: 11px 50px;
+  border-radius: 2rem;
+  border: none;
+}
+.images {
+  display: flex;
+  gap: 2rem;
+  padding: 10rem 25px 25px;
+}
+.txt1 {
+  font-size: 25px;
+}
+.txt2 {
+  font-size: 25px;
+}
+.txt3 {
+  font-size: 25px;
+}
+.txt4 {
+  font-size: 25px;
+}
+.choose p {
+  font-size: 15px;
+  color: var(--asian);
+}
+.choose h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.three {
+  padding: 9rem 25px;
+}
+.services {
+  display: flex;
+}
+.full,
+.value,
+.partners,
+.integ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5rem;
+  gap: 1rem;
+  padding: 0px 29px 29px;
+}
+.img img {
+  width: 80rem;
+  height: 35rem;
+  position: relative;
+  top: 11.5rem;
+  left: 2rem;
+  /* color: linear-gradient(rgba(0, 0, 0, 0.568), */
+  /* rgba(0, 0, 0, 0.589)); */
+  filter: brightness(40%);
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 175rem;
+  left: 5rem;
+}
+.text span {
+  font-size: 15px;
+  color: var(--asian);
+}
+.text h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.text p {
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.text button {
+  background-color: var(--master);
+  color: var(--nigga);
+  font-size: 13px;
+  padding: 13px 70px;
+  border-radius: 2rem;
+  border: none;
+}
+.footer {
+  color: var(--nigga);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.589)),
+    url(./img/marblekitchen.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 70vh;
+}
+.foot {
+  display: flex;
+  gap: 6rem;
+  /* padding-top: 5rem; */
+  padding: 5rem 25px 0px;
+}
+.kitchor {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.kitchor h1 {
+  font-weight: 600;
+  color: var(--asian);
+  font-size: 2rem;
+}
+.kitchor p {
+  font-weight: 400;
+  color: var(--master);
+}
+.number {
+  display: flex;
+  flex-direction: column;
+}
+.no2 {
+  display: flex;
+  gap: 1rem;
+}
+.no2 p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.no2 span {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--asian);
+}
+.icn {
+  display: flex;
+  gap: 1rem;
+}
+.icn svg {
+  color: var(--nigga3);
+}
+.info {
+  display: flex;
+  gap: 4rem;
+}
+.info li {
+  list-style: none;
+  color: var(--master);
+  font-weight: 400;
+}
+.info h2 {
+  color: var(--asian);
+  font-size: 20px;
+  font-weight: 500;
+}
+.subs p {
+  color: var(--nigga3);
+  font-weight: 470;
+}
+.email input {
+  color: var(--nigga3);
+}
+.email button {
+  background-color: var(--asian);
+  color: var(--master);
+  font-size: 13px;
+  padding: 13px 70px;
+  border-radius: 2rem;
+  border: none;
+}
+.sec5 {
+  text-align: center;
+  padding-bottom: 10rem;
+}
+.sec5 p {
+  font-size: 15px;
+  color: var(--asian);
+}
+.sec5 h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+.sec5 button {
+  background-color: var(--asian);
+  color: var(--master);
+  font-size: 15px;
+  padding: 13px 70px;
+  border-radius: 2rem;
+  border: none;
+}
+.sec5 svg {
+  margin-left: 3.5rem;
+}
+input {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  margin: 1rem 0;
+}
+.hr {
+  background-color: var(--nigga3);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2.1rem;
+}
+.hr hr {
+  margin-top: 5rem;
+  color: var(--nigga3);
+}
+
+@media only screen and (max-width: 700px) {
+  * {
+    outline: 1px red solid;overflow-x: hidden;
+  }
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .space {
+    position: absolute;background: #000;
+    top: 70px;
+    width: 100%;right: 0%;
+    height: 65vh;display: grid;padding: 20px;
+  }
+}
